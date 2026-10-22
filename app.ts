@@ -3,6 +3,8 @@
  * SPDX-License-Identifier: MIT
  */
 
+// Trigger CodeMender CI/CD guardrail pipeline
+
 async function app () {
   const { default: validateDependencies } = await import('./lib/startup/validateDependenciesBasic')
   await validateDependencies()
